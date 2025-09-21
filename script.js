@@ -1,22 +1,12 @@
-document.addEventListener('DOMContentLoaded', function () {
-    const heroRight = document.querySelector('.hero-right');
-    const body = document.body;
-
-    function lockBodyScroll(lock) {
-        body.style.overflow = lock ? 'hidden' : '';
-    }
-
-    // Initially lock body scroll if hero-right is overflowing
-    if (heroRight.scrollHeight > heroRight.clientHeight) {
-        lockBodyScroll(true);
-    }
-
-    heroRight.addEventListener('scroll', function () {
-        // If hero-right is scrolled to the bottom, unlock body scroll
-        if (heroRight.scrollTop + heroRight.clientHeight >= heroRight.scrollHeight - 1) {
-            lockBodyScroll(false);
-        } else {
-            lockBodyScroll(true);
+document.addEventListener("DOMContentLoaded", function() {
+    setTimeout(function() {
+        const video = document.querySelector('.gdm-video-embed__player');
+        if (video) {
+            video.muted = true;
+            video.autoplay = true;
+            video.playsInline = true;
+            video.loop = true;
+            video.play().catch(() => {});
         }
-    });
+    }, 300);
 });
