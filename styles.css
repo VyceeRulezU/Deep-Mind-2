@@ -683,6 +683,7 @@
 }
 
 .footer-title-link-wrapper{
+    height: 25rem;
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
@@ -725,3 +726,138 @@
     font-size: 1.5rem;
     font-weight: 500;
 }
+
+.footer-learn-more{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.footer-learn-more p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #9aa0a6;
+}   
+
+.footer-learn-more a{
+    width: fit-content;
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer-form{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.footer-form-title{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #9aa0a6;
+}
+
+.footer-form-summary{
+    font-size: 0.95rem;
+    font-weight: 400;
+    color: #9aa0a6;
+}
+
+.privacy{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: #9aa0a6;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.input-field{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2rem 0;
+    position: relative;
+}
+
+.email{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 1rem;
+    background-color: #191919;
+    border-radius: 10rem;
+    border: none;
+    outline: none;
+}
+
+.email::placeholder{
+    color: #9aa0a6;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.email:focus{
+    border: 1px solid #2c2c2c;
+    background-color: #191919;
+    color: white;
+}
+
+.input-field .material-icons{
+    color: #9aa0a6;
+    cursor: pointer;
+    font-size: 1.8rem;
+    padding: 0.5rem;
+    border-radius: 100%;
+    position: absolute;
+    right: 0.1rem;
+}
+
+.footer-bottom{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    column-gap: 6rem;
+    align-items: center;
+    border-top: solid 1px;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    border-color: #2c2c2c;
+    padding: 2rem 0 4rem 0;
+}
+
+.buttom-logo{
+    width: 6rem;
+    height: 2rem;
+}
+
+.buttom-logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.buttom-links{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+    align-items: center;
+}
+
+.buttom-links a{
+    text-decoration: none;
+    color: #9aa0a6;
+    font-size: 1.4rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
