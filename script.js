@@ -10,3 +10,14 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }, 300);
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    // ...existing code...
+    const toggle = document.getElementById('mobileNavToggle');
+    const menu = document.getElementById('mobileNavMenu');
+    if (toggle && menu) {
+        toggle.addEventListener('click', function() {
+            menu.classList.toggle('hide');
+        });
+    }
+});
