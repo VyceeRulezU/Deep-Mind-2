@@ -990,13 +990,17 @@
         padding: 1rem 0;
         border-bottom: 1px solid #2c2c2c;
     }
-    .hero-section,
-    .start-building-section,
-    .research-section,
-    .footer-section {
+
+    .hero-section {
         height: auto;
-        padding: 6rem 0 1rem 0;
+        padding: 10rem 0 1rem 0;
     }
+
+     .start-building-section,
+     .research-section,
+     .footer-section {
+        padding: 0 1rem;
+     }
 
     .header h1{
         font-size: 2.5rem;
