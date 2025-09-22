@@ -1109,6 +1109,17 @@
         padding: 0 0;
     }
 
+    .footer-header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .footer-link{
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
     .footer-body {
         flex-direction: column;
         row-gap: 1rem;
