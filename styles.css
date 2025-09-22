@@ -61,9 +61,7 @@
     -webkit-backdrop-filter: blur(12px); /* Safari support */
 }
 
-.mobile-nav-toggle,
-.mobile-nav-menu,
-.mobile-logo-image {
+.mobile-nav-wrapper {
     display: none;
 }
 
@@ -911,19 +909,36 @@
 /* Responsive styles for mobile */
 @media (max-width: 600px) {
 
-     .mobile-nav-toggle {
+    .body-wrapper{
+        overflow: hidden;
+    }
+
+     .nav-bar{
         display: flex;
     }
-    .mobile-nav-menu {
+    .mobile-nav-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 2rem 1.5rem;
+    }
+
+    .mobile-logo{
+        margin-top: 0.8rem;
+    }
+
+    .mobile-nav-toggle{
         display: flex;
     }
-    .mobile-nav-menu.hide {
+
+    .mobile-nav-wrapper.hide {
         display: none;
     }
-    .mobile-logo-image {
-        display: flex;
-        width: 6rem;
-        height: auto;
+
+    .logo{
+        display: none;
     }
     .nav-bar {
         padding: 1rem 1.5rem;
@@ -953,7 +968,7 @@
         display: flex;
         flex-direction: column;
         position: fixed;
-        top: 56px;
+        /* top: 56px; */
         left: 0;
         width: 100vw;
         background: rgba(20, 20, 20, 0.95);
@@ -979,11 +994,48 @@
     .start-building-section,
     .research-section,
     .footer-section {
-        padding: 0 1rem;
+        padding: 6rem 1rem;
     }
+
+    .header h1{
+        font-size: 2.5rem;
+    }
+
     .hero-image {
         height: 20rem;
     }
+
+    .hero-chips{
+        display: none;
+    }
+
+    .hero-blog-card{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+        width: 100%;
+    }
+
+    .hero-blog-card-left, .hero-blog-card-right{
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-blog-card-left h2{
+        font-size: 1.8rem;
+    }
+
+    .start-building-header, .research-header, .footer-header{
+        flex-direction: column;
+        row-gap: 1rem;
+        align-items: flex-start;
+    }
+
+    .blog-row{
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
     .footer-body {
         flex-direction: column;
         row-gap: 1rem;
@@ -992,8 +1044,26 @@
     .footer-cards {
         width: 100%;
     }
+
+    .footer-cards h3{
+        font-size: 2rem;
+    }
+
     .footer-form {
         width: 100%;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        row-gap: 1rem;
+        padding: 1rem 0 2rem 0;
+        align-items: flex-start;
+    }
+
+    .buttom-links{
+        flex-direction: column;
+        row-gap: 1rem;
+        align-items: flex-start;
     }
 }
 
