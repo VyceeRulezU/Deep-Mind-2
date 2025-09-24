@@ -272,7 +272,7 @@
 }
 
 .hero-image-chip p{
-    font-size: 1.2rem;
+    font-size: 0.8rem;
     font-weight: 500;
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
@@ -358,14 +358,25 @@
     overflow: hidden;
 }
 
+.hero-blog-card-right video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
 .hero-blog-card-right img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-     transition: transform 0.3s ease; /* Smooth transition */
+    transition: transform 0.3s ease; /* Smooth transition */
 }
 
 .hero-blog-card-right:hover img {
+    transform: scale(1.08); /* Grow image on hover */
+}
+
+.hero-blog-card-right:hover video {
     transform: scale(1.08); /* Grow image on hover */
 }
 
