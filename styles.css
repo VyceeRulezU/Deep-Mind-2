@@ -229,6 +229,9 @@
     flex-direction: row;
     align-items: center;
     column-gap: 0.5rem;
+    border-radius: 0.4rem;
+    padding: 0.6rem 0.6rem 0.6rem 0;
+    cursor: pointer;
 }
 
 .learn-more a{
@@ -242,6 +245,7 @@
 .learn-more:hover{
     color: white;
     column-gap: 0.8rem;
+    background-color: #191919;
     transition: color 0.3s ease, column-gap 0.3s ease;
 }
 
