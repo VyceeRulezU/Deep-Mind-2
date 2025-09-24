@@ -168,7 +168,7 @@
     justify-content: center;
     align-items: center;
     color: white;
-    padding: 10rem 18rem 0rem 18rem;
+    padding: 10rem 8rem 0rem 8rem;
 }
 
 .hero-left {
@@ -391,7 +391,7 @@
     justify-content: center;
     align-items: center;
     color: white;
-    padding: 0 18rem;
+    padding: 0 8rem;
     row-gap: 2rem;
     border-top: solid 1px;
     border-right: none;
@@ -577,7 +577,7 @@
     justify-content: center;
     align-items: center;
     color: white;
-    padding: 0rem 18rem;
+    padding: 0rem 8rem;
     row-gap: 2rem;
     border-top: solid 1px;
     border-right: none;
@@ -631,7 +631,7 @@
     justify-content: center;
     align-items: center;
     color: white;
-    padding: 0 18rem;
+    padding: 0 8rem;
     row-gap: 2rem;
     
 }
